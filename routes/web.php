@@ -25,7 +25,10 @@ Route::group(['prefix' => 'admin'], function() {
     Route::resource('produk',\App\Http\Controllers\ProdukController::class);
     Route::resource('customer',\App\Http\Controllers\CustomerController::class);
     Route::resource('transaksi',\App\Http\Controllers\TransaksiController::class);
-
+    Route::get('profil',[\App\Http\Controllers\UserController::class,'index']);
+    Route::get('setting',[\App\Http\Controllers\UserController::class,'setting']);
+    Route::get('laporan',[\App\Http\Controllers\LaporanController::class,'index']);
+    Route::get('proseslaporan',[\App\Http\Controllers\LaporanController::class,'proses']);
 
 });
 
