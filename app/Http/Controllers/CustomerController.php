@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class KategoriController extends Controller
+class CustomerController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,8 +13,8 @@ class KategoriController extends Controller
      */
     public function index()
     {
-        $data = array('title' => 'Kategori Produk');
-        return view('kategori.index', $data);
+        $data = array('title' => 'Data Customer');
+        return view('customer.index', $data);
     }
 
     /**
@@ -24,8 +24,7 @@ class KategoriController extends Controller
      */
     public function create()
     {
-        $data = array('title' => 'Form Kategori');
-        return view('kategori.create', $data);
+        //
     }
 
     /**
@@ -58,8 +57,8 @@ class KategoriController extends Controller
      */
     public function edit($id)
     {
-        $data = array('title' => 'Form Edit Kategori');
-        return view('kategori.edit', $data);
+        $data = array('title' => 'Form Edit Customer');
+        return view('customer.edit', $data);
     }
 
     /**
