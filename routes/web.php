@@ -34,6 +34,7 @@ Route::group(['prefix' => 'admin'], function() {
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/', [\App\Http\Controllers\HomepageController::class,'index']);
+Route::get('/produk', [\App\Http\Controllers\HomepageController::class,'produk']);
 Route::get('/about', [\App\Http\Controllers\HomepageController::class,'about']);
 Route::get('/kontak', [\App\Http\Controllers\HomepageController::class,'kontak']);
 Route::get('/kategori', [\App\Http\Controllers\HomepageController::class,'kategori']);

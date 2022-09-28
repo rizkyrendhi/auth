@@ -10,6 +10,11 @@ class HomepageController extends Controller
         $data = array('title' => 'Homepage');
         return view('homepage.index', $data);
     }
+    public function produk() {
+        $data = array('title' => 'produk');
+        return view('homepage.produk', $data);
+    }
+
     public function about() {
         $data = array('title' => 'Tentang Kami');
         return view('homepage.about', $data);
