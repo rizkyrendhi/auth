@@ -3,7 +3,7 @@
   <div class="container">
     <a class="navbar-brand mt-4 mt-lg-0" href="#">
       <img
-        src="{{ asset('images/logo.png') }}"
+        src="{{ asset('images/logo-2.png') }}"
         height="40"
         alt="MDB Logo"
         loading="lazy"
