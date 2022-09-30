@@ -9,7 +9,7 @@
   <div class="row mt-5">
     <div class="col">
       <div id="carousel" class="carousel slide" data-ride="carousel" >
-        <div class="carousel-inner">
+        <div class="carousel-inner" style="height: 300px;">
           <div class="carousel-item active">
               <img src="{{ asset('images/download1.jpg') }}" class="d-block w-150 h-250" alt="...">
           </div>
@@ -33,14 +33,20 @@
   </div>
 </div>
   <!-- end carousel -->
+  <br>
   <div class="container">
     <div class="col">
+      
   <div class="row mt-4">
     <div class="col col-md-12 col-sm-12 mb-4">
-      <h2 class="text-center">Kategori Produk</h2>
+      <div class="card bg-dark" style="border-color: white; color:white;">
+        <div class="card-body" style="width: 500px;">
+          This is some text within a card body.
+        </div>
+    </div>
     </div>
     <!-- kategori pertama -->
-    <div class="col-md-4">
+    <div class="col-md-2">
       <div class="card mb-4 shadow-sm">
         <a href="{{ URL::to('kategori/satu') }}">
           <img src="{{asset('images/makanan.jpg') }}" alt="foto kategori" class="card-img-top">
@@ -53,7 +59,7 @@
       </div>
     </div>
     <!-- kategori kedua -->
-    <div class="col-md-4">
+    <div class="col-md-2">
       <div class="card mb-4 shadow-sm">
         <a href="{{ URL::to('kategori/dua') }}">
           <img src="{{asset('images/sabun.png') }}" alt="foto kategori" class="card-img-top">
@@ -66,7 +72,7 @@
       </div>
     </div>
     <!-- kategori ketiga -->
-    <div class="col-md-4">
+    <div class="col-md-2">
       <div class="card mb-4 shadow-sm">
         <a href="{{ URL::to('kategori/tiga') }}">
           <img src="{{asset('images/aksesoris.png') }}" alt="foto kategori" class="card-img-top">
@@ -263,24 +269,4 @@
     </div>
   </div>
   <!-- end produk terbaru -->
-  <!-- tentang toko -->
-  <hr>
-  <div class="row mt-4">
-    <div class="col">
-      <h5 class="text-center">Toko Online Menggunakan Laravel</h5>
-      <p>
-        Toko adalah demo membangun toko online menggunakan laravel framework. Di dalam demo ini terdapat user bisa menginput data kategori, produk dan transaksi.
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic laborum aliquam dolorum sequi nulla maiores quos incidunt veritatis numquam suscipit. Cumque dolore rem obcaecati. Eos quod ad non veritatis assumenda.
-      </p>
-      <p>
-        Toko adalah demo membangun toko online menggunakan laravel framework. Di dalam demo ini terdapat user bisa menginput data kategori, produk dan transaksi.
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic laborum aliquam dolorum sequi nulla maiores quos incidunt veritatis numquam suscipit. Cumque dolore rem obcaecati. Eos quod ad non veritatis assumenda.
-      </p>
-      <p class="text-center">
-        <a href="" class="btn btn-outline-secondary">
-          Baca Selengkapnya
-        </a>      
-      </p>
-    </div>
-  </div>
-  <!-- end tentang toko -->
+ 
