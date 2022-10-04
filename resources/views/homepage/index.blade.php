@@ -192,7 +192,7 @@
     <div class="col-md-3">
       <div class="card mb-4 shadow-sm bg-dark">
         <a href="{{ URL::to('produk/satu') }}">
-          <img src="{{asset('images/slide2.jpg') }}" alt="foto produk" class="card-img-top">
+          <img src="{{asset('images/pro-1.jpg') }}" alt="foto produk" class="card-img-top">
         </a>
         <div class="card-body">
           <a href="{{ URL::to('produk/satu') }}" class="text-decoration-none">
@@ -219,7 +219,7 @@
     <div class="col-md-3">
       <div class="card mb-4 shadow-sm">
         <a href="{{ URL::to('produk/dua') }}">
-          <img src="{{asset('images/slide2.jpg') }}" alt="foto produk" class="card-img-top">
+          <img src="{{asset('images/pro-2.jpg') }}" alt="foto produk" class="card-img-top">
         </a>
         <div class="card-body">
           <a href="{{ URL::to('produk/dua') }}" class="text-decoration-none">
@@ -246,7 +246,7 @@
      <div class="col-md-3">
       <div class="card mb-4 shadow-sm">
         <a href="{{ URL::to('produk/dua') }}">
-          <img src="{{asset('images/slide2.jpg') }}" alt="foto produk" class="card-img-top">
+          <img src="{{asset('images/pro-3.jpg') }}" alt="foto produk" class="card-img-top">
         </a>
         <div class="card-body">
           <a href="{{ URL::to('produk/dua') }}" class="text-decoration-none">
@@ -273,7 +273,7 @@
     <div class="col-md-3">
       <div class="card mb-4 shadow-sm">
         <a href="{{ URL::to('produk/tiga') }}">
-          <img src="{{asset('images/slide2.jpg') }}" alt="foto produk" class="card-img-top">
+          <img src="{{asset('images/pro-4.jpg') }}" alt="foto produk" class="card-img-top">
         </a>
         <div class="card-body">
           <a href="{{ URL::to('produk/tiga') }}" class="text-decoration-none">
@@ -299,7 +299,7 @@
     <div class="col-md-3">
       <div class="card mb-4 shadow-sm">
         <a href="{{ URL::to('produk/satu') }}">
-          <img src="{{asset('images/slide2.jpg') }}" alt="foto produk" class="card-img-top">
+          <img src="{{asset('images/pro-6.jpg') }}" alt="foto produk" class="card-img-top">
         </a>
         <div class="card-body">
           <a href="{{ URL::to('produk/satu') }}" class="text-decoration-none">
@@ -322,11 +322,11 @@
         </div>
       </div>
     </div>
-    <!-- produk kedua -->
+    <!-- produk kelima -->
     <div class="col-md-3">
       <div class="card mb-4 shadow-sm">
         <a href="{{ URL::to('produk/dua') }}">
-          <img src="{{asset('images/slide2.jpg') }}" alt="foto produk" class="card-img-top">
+          <img src="{{asset('images/pro-5.jpg') }}" alt="foto produk" class="card-img-top">
         </a>
         <div class="card-body">
           <a href="{{ URL::to('produk/dua') }}" class="text-decoration-none">
@@ -353,7 +353,7 @@
      <div class="col-md-3">
       <div class="card mb-4 shadow-sm">
         <a href="{{ URL::to('produk/dua') }}">
-          <img src="{{asset('images/slide2.jpg') }}" alt="foto produk" class="card-img-top">
+          <img src="{{asset('images/pro-7.jpg') }}" alt="foto produk" class="card-img-top">
         </a>
         <div class="card-body">
           <a href="{{ URL::to('produk/dua') }}" class="text-decoration-none">
@@ -380,7 +380,7 @@
     <div class="col-md-3">
       <div class="card mb-4 shadow-sm">
         <a href="{{ URL::to('produk/tiga') }}">
-          <img src="{{asset('images/slide2.jpg') }}" alt="foto produk" class="card-img-top">
+          <img src="{{asset('images/pro-8.jpg') }}" alt="foto produk" class="card-img-top">
         </a>
         <div class="card-body">
           <a href="{{ URL::to('produk/tiga') }}" class="text-decoration-none">
