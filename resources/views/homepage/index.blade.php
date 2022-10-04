@@ -40,60 +40,61 @@
   <div class="row mt-4">
     <div class="col col-md-12 col-sm-12 mb-4">
       <div class="card bg-dark" style="border-color: white; color:white;">
-        <div class="card-body" style="width: 500px;">
-          This is some text within a card body.
-        </div>
-    </div>
-    </div>
-    <!-- kategori pertama -->
-    <div class="col-md-2">
-      <div class="card mb-4 shadow-sm">
-        <a href="{{ URL::to('kategori/satu') }}">
-          <img src="{{asset('images/makanan.jpg') }}" alt="foto kategori" class="card-img-top">
-        </a>
-        <div class="card-body">
-          <a href="{{ URL::to('kategori/satu') }}" class="text-decoration-none">
-            <p class="card-text">Makanan</p>
+        <div class="card-body" style="width: 1500px;">
+          <a class="brand mt-4 mt-lg-0" href="#" style="color: white; font-size: 20px;">
+            <strong> Platform </strong>&nbsp &nbsp &nbsp <a>|</a>
+          </a> &nbsp &nbsp
+          <a class="brand mt-4 mt-lg-0" href="{{ URL::to('kategori') }}">
+            <img
+              src="{{ asset('images/gam-1.png') }}"
+              height="40"
+              alt="MDB Logo"
+              loading="lazy"
+            />
+          </a>&nbsp &nbsp &nbsp &nbsp
+          <a class="brand mt-4 mt-lg-0" href="{{ URL::to('kategori') }}">
+            <img
+              src="{{ asset('images/gam-4.png') }}"
+              height="40"
+              alt="MDB Logo"
+              loading="lazy"
+            />
+          </a>&nbsp &nbsp &nbsp 
+          <a class="brand mt-4 mt-lg-0" href="{{ URL::to('kategori') }}">
+            <img
+              src="{{ asset('images/gam-3.png') }}"
+              height="40"
+              alt="MDB Logo"
+              loading="lazy"
+            />
+          </a>&nbsp &nbsp &nbsp &nbsp
+          <a class="brand mt-4 mt-lg-0" href="{{ URL::to('kategori') }}">
+            <img
+              src="{{ asset('images/gam-2.png') }}"
+              height="40"
+              alt="MDB Logo"
+              loading="lazy"
+            />
+          </a>&nbsp &nbsp &nbsp &nbsp
+          <a class="brand mt-4 mt-lg-0" href="{{ URL::to('kategori') }}">
+            <img
+              src="{{ asset('images/gam-5.png') }}"
+              height="40"
+              alt="MDB Logo"
+              loading="lazy"
+            />
           </a>
         </div>
-      </div>
     </div>
-    <!-- kategori kedua -->
-    <div class="col-md-2">
-      <div class="card mb-4 shadow-sm">
-        <a href="{{ URL::to('kategori/dua') }}">
-          <img src="{{asset('images/sabun.png') }}" alt="foto kategori" class="card-img-top">
-        </a>
-        <div class="card-body">
-          <a href="{{ URL::to('kategori/dua') }}" class="text-decoration-none">
-            <p class="card-text">Shampoo</p>
-          </a>
-        </div>
-      </div>
     </div>
-    <!-- kategori ketiga -->
-    <div class="col-md-2">
-      <div class="card mb-4 shadow-sm">
-        <a href="{{ URL::to('kategori/tiga') }}">
-          <img src="{{asset('images/aksesoris.png') }}" alt="foto kategori" class="card-img-top">
-        </a>
-        <div class="card-body">
-          <a href="{{ URL::to('kategori/tiga') }}" class="text-decoration-none">
-            <p class="card-text">Aksesoris</p>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- end kategori produk -->
-  
+   
   <!-- produk Promo-->
-  <div class="row mt-4">
+  <!--<div class="row mt-4">
     <div class="col col-md-12 col-sm-12 mb-4">
       <h2 class="text-center">Promo</h2>
-    </div>
+    </div>-->
     <!-- produk pertama -->
-    <div class="col-md-4">
+    <!--<div class="col-md-4">
       <div class="card mb-4 shadow-sm">
         <a href="{{ URL::to('produk/satu') }}">
           <img src="{{asset('images/slide3.jpg') }}" alt="foto produk" class="card-img-top">
@@ -120,9 +121,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>-->
     <!-- produk kedua -->
-    <div class="col-md-4">
+    <!--<div class="col-md-4">
       <div class="card mb-4 shadow-sm">
         <a href="{{ URL::to('produk/dua') }}">
           <img src="{{asset('images/slide3.jpg') }}" alt="foto produk" class="card-img-top">
@@ -149,9 +150,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>-->
     <!-- produk ketiga -->
-    <div class="col-md-4">
+    <!--<div class="col-md-4">
       <div class="card mb-4 shadow-sm">
         <a href="{{ URL::to('produk/tiga') }}">
           <img src="{{asset('images/slide3.jpg') }}" alt="foto produk" class="card-img-top">
@@ -179,15 +180,123 @@
         </div>
       </div>
     </div>
-  </div>
+  </div>-->
   <!-- end produk promo -->
   <!-- produk Terbaru-->
   <div class="row mt-4">
     <div class="col col-md-12 col-sm-12 mb-4">
-      <h2 class="text-center">Terbaru</h2>
+      <h2 class="text-left" style="color: white; ">Rekomendasi</h2>
+      <a class="text-right" style="color: white; text-decoration: none; float: right;" href="{{ URL::to('produk') }}">Lihat Produk Lainnya  &nbsp<i class="fa-solid fa-arrow-right"></i></a>
     </div>
     <!-- produk pertama -->
-    <div class="col-md-4">
+    <div class="col-md-3">
+      <div class="card mb-4 shadow-sm bg-dark">
+        <a href="{{ URL::to('produk/satu') }}">
+          <img src="{{asset('images/slide2.jpg') }}" alt="foto produk" class="card-img-top">
+        </a>
+        <div class="card-body">
+          <a href="{{ URL::to('produk/satu') }}" class="text-decoration-none">
+            <p class="card-text">
+              Produk Pertama
+            </p>
+          </a>
+          <div class="row mt-4">
+            <div class="col">
+              <button class="btn btn-light">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+            <div class="col-auto">
+              <p>
+                Rp. 10.000,00
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- produk kedua -->
+    <div class="col-md-3">
+      <div class="card mb-4 shadow-sm">
+        <a href="{{ URL::to('produk/dua') }}">
+          <img src="{{asset('images/slide2.jpg') }}" alt="foto produk" class="card-img-top">
+        </a>
+        <div class="card-body">
+          <a href="{{ URL::to('produk/dua') }}" class="text-decoration-none">
+            <p class="card-text">
+              Produk Kedua
+            </p>
+          </a>
+          <div class="row mt-4">
+            <div class="col">
+              <button class="btn btn-light">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+            <div class="col-auto">
+              <p>
+                Rp. 10.000,00
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!-- produk ketiga -->
+     <div class="col-md-3">
+      <div class="card mb-4 shadow-sm">
+        <a href="{{ URL::to('produk/dua') }}">
+          <img src="{{asset('images/slide2.jpg') }}" alt="foto produk" class="card-img-top">
+        </a>
+        <div class="card-body">
+          <a href="{{ URL::to('produk/dua') }}" class="text-decoration-none">
+            <p class="card-text">
+              Produk Kedua
+            </p>
+          </a>
+          <div class="row mt-4">
+            <div class="col">
+              <button class="btn btn-light">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+            <div class="col-auto">
+              <p>
+                Rp. 10.000,00
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- produk keempat -->
+    <div class="col-md-3">
+      <div class="card mb-4 shadow-sm">
+        <a href="{{ URL::to('produk/tiga') }}">
+          <img src="{{asset('images/slide2.jpg') }}" alt="foto produk" class="card-img-top">
+        </a>
+        <div class="card-body">
+          <a href="{{ URL::to('produk/tiga') }}" class="text-decoration-none">
+            <p class="card-text">
+              Produk Ketiga
+            </p>
+          </a>
+          <div class="row mt-4">
+            <div class="col">
+              <button class="btn btn-light">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+            <div class="col-auto">
+              <p>
+                Rp. 10.000,00
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
       <div class="card mb-4 shadow-sm">
         <a href="{{ URL::to('produk/satu') }}">
           <img src="{{asset('images/slide2.jpg') }}" alt="foto produk" class="card-img-top">
@@ -214,7 +323,7 @@
       </div>
     </div>
     <!-- produk kedua -->
-    <div class="col-md-4">
+    <div class="col-md-3">
       <div class="card mb-4 shadow-sm">
         <a href="{{ URL::to('produk/dua') }}">
           <img src="{{asset('images/slide2.jpg') }}" alt="foto produk" class="card-img-top">
@@ -240,8 +349,35 @@
         </div>
       </div>
     </div>
-    <!-- produk ketiga -->
-    <div class="col-md-4">
+     <!-- produk ketiga -->
+     <div class="col-md-3">
+      <div class="card mb-4 shadow-sm">
+        <a href="{{ URL::to('produk/dua') }}">
+          <img src="{{asset('images/slide2.jpg') }}" alt="foto produk" class="card-img-top">
+        </a>
+        <div class="card-body">
+          <a href="{{ URL::to('produk/dua') }}" class="text-decoration-none">
+            <p class="card-text">
+              Produk Kedua
+            </p>
+          </a>
+          <div class="row mt-4">
+            <div class="col">
+              <button class="btn btn-light">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+            <div class="col-auto">
+              <p>
+                Rp. 10.000,00
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- produk keempat -->
+    <div class="col-md-3">
       <div class="card mb-4 shadow-sm">
         <a href="{{ URL::to('produk/tiga') }}">
           <img src="{{asset('images/slide2.jpg') }}" alt="foto produk" class="card-img-top">
@@ -269,4 +405,52 @@
     </div>
   </div>
   <!-- end produk terbaru -->
- 
+
+  <!-- produk Terbaru-->
+  <!--<div class="row mt-4">
+    <div class="col col-md-12 col-sm-12 mb-4">
+      <h2 class="text-left" style="color: white; ">Rekomendasi</h2>
+      <a class="text-right" style="color: white; text-decoration: none; float: right;" href="{{ URL::to('produk') }}">Lihat Produk Lainnya  &nbsp<i class="fa-solid fa-arrow-right"></i></a>
+    </div>-->
+     <!-- kategori pertama -->
+     <!--<div class="col-md-2">
+      <div class="card mb-4 shadow-sm bg-dark">
+        <a href="{{ URL::to('kategori/satu') }}">
+          <img src="{{asset('images/makanan.jpg') }}" alt="foto kategori" class="card-img-top">
+        </a>
+        <div class="card-body">
+          <a href="{{ URL::to('kategori/satu') }}" class="text-decoration-none">
+            <p class="card-text">Makanan</p>
+          </a>
+        </div>
+      </div>
+    </div>-->
+    <!-- kategori kedua -->
+    <!--<div class="col-md-2">
+      <div class="card mb-4 shadow-sm">
+        <a href="{{ URL::to('kategori/dua') }}">
+          <img src="{{asset('images/sabun.png') }}" alt="foto kategori" class="card-img-top">
+        </a>
+        <div class="card-body">
+          <a href="{{ URL::to('kategori/dua') }}" class="text-decoration-none">
+            <p class="card-text">Shampoo</p>
+          </a>
+        </div>
+      </div>
+    </div>-->
+    <!-- kategori ketiga -->
+    <!--<div class="col-md-2">
+      <div class="card mb-4 shadow-sm">
+        <a href="{{ URL::to('kategori/tiga') }}">
+          <img src="{{asset('images/aksesoris.png') }}" alt="foto kategori" class="card-img-top">
+        </a>
+        <div class="card-body">
+          <a href="{{ URL::to('kategori/tiga') }}" class="text-decoration-none">
+            <p class="card-text">Aksesoris</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>-->
+  <!-- end produk terbaru -->

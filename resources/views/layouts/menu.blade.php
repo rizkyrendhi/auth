@@ -27,15 +27,18 @@
         <li class="nav-item">
           <a class="nav-link" href="{{ URL::to('kontak') }}">Kontak</a>
         </li>-->
-        
-        <a class="text-reset me-3" href="#">
+        <li class="nav-item">
+        <a class="nav-link" href="#">
           <i style="color:white; font-size:25px; margin-top:5px;" class="fa-solid fa-cart-shopping"></i>
         </a>
+        </li>
         &nbsp &nbsp
         <li class="nav-item">
+          <a class="nav-link" href="{{ URL::to('login') }}">
           <button type="button" class="btn btn-primary me-3" style="background-color: #1E2046; border-color:white; width:100px; "href="{{ URL::to('login') }}">
             Login
           </button>
+          </a>
         </li>
       </ul>
     </div>
