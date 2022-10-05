@@ -43,10 +43,9 @@
               <thead>
                 <tr>
                   <th width="50px">No</th>
-                  <th>Gambar</th>
                   <th>Kode</th>
                   <th>Nama</th>
-                  <th>Jumlah Produk</th>
+                  <th>Kategori</th>
                   <th>Status</th>
                   <th></th>
                 </tr>
@@ -58,27 +57,13 @@
                   {{ ++$no }}
                   </td>
                   <td>
-                    <img src="{{ asset('images/slide1.jpg') }}" alt="kategori 1" width='150px'>
-                    <div class="row mt-2">
-                      <div class="col">
-                        <input type="file" name="gambar" id="gambar">
-                      </div>
-                      <form action="{{ url('/admin/kategorimage') }}" method="post" style="display:inline;">
-                      @csrf
-                      {{ method_field('uploadimage') }}
-                      <button type="submit" class="btn btn-sm btn-danger mb-2">
-                        upload
-                      </button>                    
-                    </form>
-                  </td>
-                  <td>
                   {{ $kategori->kode_kategori }}
                   </td>
                   <td>
                   {{ $kategori->nama_kategori }}
                   </td>
                   <td>
-                  {{ is_countable($kategori->produk) }}
+                  {{ $kategori->slug_kategori }}
                   </td>
                   <td>
                   {{ $kategori->status }}

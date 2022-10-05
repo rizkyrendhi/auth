@@ -40,12 +40,18 @@
               <input type="text" name="nama_kategori" id="nama_kategori" class="form-control" value={{ $itemkategori->nama_kategori }}>
             </div>
             <div class="form-group">
-              <label for="slug_kategori">Slug Kategori</label>
-              <input type="text" name="slug_kategori" id="slug_kategori" class="form-control" value={{ $itemkategori->slug_kategori }}>
+              <label for="status">Kategori</label>
+              <select name="slug_kategori" id="slug_kategori" class="form-control">
+                <option value="Windows">Windows</option>
+                <option value="XBOX">XBOX</option>
+                <option value="XBOX_One">XBOX One</option>
+                <option value="PS 4">PS 4</option>
+                <option value="PS 5">PS 5</option>
+              </select>
             </div>
             <div class="form-group">
-              <label for="deskripsi_kategori">Deskripsi</label>
-              <textarea name="deskripsi_kategori" id="deskripsi_kategori" cols="30" rows="5" class="form-control">{{ $itemkategori->deskripsi_kategori }}</textarea>
+              <label for="slug_kategori">Deskripsi</label>
+              <input type="text" name="deskripsi_kategori" id="deskripsi_kategori" class="form-control" value="-"readonly/>
             </div>
             <div class="form-group">
               <label for="status">Status</label>
