@@ -7,10 +7,11 @@
 @section('content')
 <body style="background-color: #1E2046;">
             <div class="loginBox">
+                <img class="user" src="{{ asset('images/logo-login2.png') }}" height="150px" width="150px">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
-                      
+                            <br>
                             <div class="inputBox">
                                 <input id="name" type="text"  placeholder="Username" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
 
@@ -51,7 +52,7 @@
                         
 
                        
-                                <input type="submit" value="Register" >
+                                <input type="submit" value="Register" style="background: blue;">
                                   
                             
                         </div>

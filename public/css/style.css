@@ -67,9 +67,11 @@ screen and (max-width: 600px;)
     border: none;
     outline: none;
     height: 40px;font-size: 16px;
-    background:  #1E2046;
+    background:  #15da0e;
     color: #fff;border-radius: 20px;
-    cursor: pointer}
+    cursor: pointer
+}
+
     .loginBox a{
         color: #ffffff;
         font-size: 14px;
