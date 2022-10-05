@@ -9,15 +9,15 @@
   <div class="row mt-5">
     <div class="col">
       <div id="carousel" class="carousel slide" data-ride="carousel" >
-        <div class="carousel-inner" style="height: 300px;">
+        <div class="carousel-inner" style="height: 300px; ">
           <div class="carousel-item active">
-              <img src="{{ asset('images/download1.jpg') }}" class="d-block w-150 h-250" alt="...">
+              <img src="{{ asset('images/carousel-3.jpg') }}" class="d-block w-150 h-250" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="{{ asset('images/download1.jpg') }}" class="d-block w-150 h-250" alt="...">
+            <img src="{{ asset('images/carousel-2.jpg') }}" class="d-block w-150 h-250" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="{{ asset('images/download1.jpg') }}" class="d-block w-150 h-250" alt="...">
+            <img src="{{ asset('images/carousel-4.jpg') }}" class="d-block w-150 h-250" alt="...">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
