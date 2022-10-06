@@ -13,12 +13,12 @@
         <body style="background-color: #1E2046;">
             <div class="loginBox">
                 
-                <img class="user" src="https://i.ibb.co/yVGxFPR/2.png" height="100px" width="100px">
+                <img class="user" src="{{ asset('images/logo-login2.png') }}" height="150px" width="150px">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
                        
-                            
+                            <br>
                             <div class="inputBox">
                                 
                                 <input id="email" type="email" placeholder="Email"  name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
