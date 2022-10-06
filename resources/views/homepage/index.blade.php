@@ -41,7 +41,7 @@
     <div class="col col-md-12 col-sm-12 mb-4">
       <div class="card bg-dark" style="border-color: white; color:white;">
         <div class="card-body" style="width: 1500px;">
-          <a class="brand mt-4 mt-lg-0" href="#" style="color: white; font-size: 20px;">
+          <a class="brand mt-4 mt-lg-0"  style="color: white; font-size: 20px; text-decoration: none;">
             <strong> Platform </strong>&nbsp &nbsp &nbsp <a>|</a>
           </a> &nbsp &nbsp
           <a class="brand mt-4 mt-lg-0" href="{{ URL::to('kategori') }}">
@@ -92,18 +92,20 @@
   <div class="row mt-4" >
     <div class="col col-md-12 col-sm-12 mb-4">
       <h2 class="text-left" style="color: white; ">Rekomendasi</h2>
-      <a class="text-right" style="color: white; text-decoration: none; float: right;" href="{{ URL::to('produk') }}">Lihat Produk Lainnya  &nbsp<i class="fa-solid fa-arrow-right"></i></a>
+     
     </div>
+    @foreach($itemproduk as $produk)
+    @if ($produk->foto !=null)
     <!-- produk pertama -->
     <div class="col-md-3">
       <div class="card mb-4 shadow-sm bg-dark">
         <a href="{{ URL::to('produk/satu') }}">
-          <img src="{{asset('images/pro-1.jpg') }}" alt="foto produk" class="card-img-top">
+          <img src="{{ \Storage::url($produk->foto) }}" alt="foto produk" class="card-img-top">
         </a>
         <div class="card-body">
           <a href="{{ URL::to('produk/satu') }}" class="text-decoration-none">
             <p class="card-text" style="color: white;">
-              League of Legends
+            {{ $produk->nama_produk }}
             </p>
           </a>
           <div class="row mt-4">
@@ -114,205 +116,15 @@
             </div>
             <div class="col-auto">
               <p style="color: white;">
-                Rp. 10.000,00
+              {{ number_format($produk->harga, 2) }}
               </p>
             </div>
+            @endif
           </div>
         </div>
       </div>
     </div>
-    <!-- produk kedua -->
-    <div class="col-md-3">
-      <div class="card mb-4 shadow-sm bg-dark">
-        <a href="{{ URL::to('produk/dua') }}">
-          <img src="{{asset('images/pro-2.jpg') }}" alt="foto produk" class="card-img-top">
-        </a>
-        <div class="card-body">
-          <a href="{{ URL::to('produk/dua') }}" class="text-decoration-none">
-            <p class="card-text" style="color: white;">
-              Fortnite
-            </p>
-          </a>
-          <div class="row mt-4">
-            <div class="col">
-              <button class="btn btn-dark">
-                <i class="far fa-heart"></i>
-              </button>
-            </div>
-            <div class="col-auto">
-              <p style="color: white;">
-                Rp. 10.000,00
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-     <!-- produk ketiga -->
-     <div class="col-md-3">
-      <div class="card mb-4 shadow-sm bg-dark">
-        <a href="{{ URL::to('produk/dua') }}">
-          <img src="{{asset('images/pro-3.jpg') }}" alt="foto produk" class="card-img-top">
-        </a>
-        <div class="card-body">
-          <a href="{{ URL::to('produk/dua') }}" class="text-decoration-none">
-            <p class="card-text" style="color: white;">
-              Bloodborne
-            </p>
-          </a>
-          <div class="row mt-4">
-            <div class="col">
-              <button class="btn btn-dark">
-                <i class="far fa-heart"></i>
-              </button>
-            </div>
-            <div class="col-auto">
-              <p style="color: white;">
-                Rp. 10.000,00
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- produk keempat -->
-    <div class="col-md-3">
-      <div class="card mb-4 shadow-sm bg-dark">
-        <a href="{{ URL::to('produk/tiga') }}">
-          <img src="{{asset('images/pro-4.jpg') }}" alt="foto produk" class="card-img-top">
-        </a>
-        <div class="card-body">
-          <a href="{{ URL::to('produk/tiga') }}" class="text-decoration-none">
-            <p class="card-text" style="color: white;">
-              Monster Hunter: World
-            </p>
-          </a>
-          <div class="row mt-4">
-            <div class="col">
-              <button class="btn btn-dark">
-                <i class="far fa-heart"></i>
-              </button>
-            </div>
-            <div class="col-auto">
-              <p style="color: white;">
-                Rp. 10.000,00
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card mb-4 shadow-sm bg-dark">
-        <a href="{{ URL::to('produk/satu') }}">
-          <img src="{{asset('images/pro-6.jpg') }}" alt="foto produk" class="card-img-top">
-        </a>
-        <div class="card-body">
-          <a href="{{ URL::to('produk/satu') }}" class="text-decoration-none">
-            <p class="card-text" style="color: white;">
-              Apex Legends
-            </p>
-          </a>
-          <div class="row mt-4">
-            <div class="col">
-              <button class="btn btn-dark">
-                <i class="far fa-heart"></i>
-              </button>
-            </div>
-            <div class="col-auto">
-              <p style="color: white;">
-                Rp. 10.000,00
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- produk kelima -->
-    <div class="col-md-3">
-      <div class="card mb-4 shadow-sm bg-dark">
-        <a href="{{ URL::to('produk/dua') }}">
-          <img src="{{asset('images/pro-5.jpg') }}" alt="foto produk" class="card-img-top">
-        </a>
-        <div class="card-body">
-          <a href="{{ URL::to('produk/dua') }}" class="text-decoration-none">
-            <p class="card-text" style="color: white;">
-              God of War 
-
-            </p>
-          </a>
-          <div class="row mt-4">
-            <div class="col">
-              <button class="btn btn-dark">
-                <i class="far fa-heart"></i>
-              </button>
-            </div>
-            <div class="col-auto">
-              <p style="color: white;">
-                Rp. 10.000,00
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-     <!-- produk keenam -->
-     <div class="col-md-3">
-      <div class="card mb-4 shadow-sm bg-dark">
-        <a href="{{ URL::to('produk/dua') }}">
-          <img src="{{asset('images/pro-7.jpg') }}" alt="foto produk" class="card-img-top">
-        </a>
-        <div class="card-body">
-          <a href="{{ URL::to('produk/dua') }}" class="text-decoration-none">
-            <p class="card-text" style="color: white;">
-              Hogwarts Legacy
-            </p>
-          </a>
-          <div class="row mt-4">
-            <div class="col">
-              <button class="btn btn-dark">
-                <i class="far fa-heart"></i>
-              </button>
-            </div>
-            <div class="col-auto">
-              <p style="color: white;">
-                Rp. 10.000,00
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- produk ketujuh-->
-    <div class="col-md-3">
-      <div class="card mb-4 shadow-sm bg-dark">
-        <a href="{{ URL::to('produk/tiga') }}">
-          <img src="{{asset('images/pro-8.jpg') }}" alt="foto produk" class="card-img-top">
-        </a>
-        <div class="card-body">
-          <a href="{{ URL::to('produk/tiga') }}" class="text-decoration-none">
-            <p class="card-text" style="color: white; ">
-              Spider-Man: Miles Morales 
-            </p>
-          </a>
-          <div class="row mt-4">
-            <div class="col">
-              <button class="btn btn-dark">
-                <i class="far fa-heart"></i>
-              </button>
-            </div>
-            <div class="col-auto">
-              <p style="color: white;">
-                Rp. 10.000,00
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- end produk terbaru -->
-
+@endforeach
   <!-- produk Terbaru-->
   <!--<div class="row mt-4">
     <div class="col col-md-12 col-sm-12 mb-4">

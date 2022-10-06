@@ -11,9 +11,7 @@ class Kategori extends Model
         'kode_kategori',
         'nama_kategori',
         'slug_kategori',
-        'deskripsi_kategori',
         'status',
-        'foto',
         'user_id',
     ];
 
