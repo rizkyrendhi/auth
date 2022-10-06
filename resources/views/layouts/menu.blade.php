@@ -1,5 +1,5 @@
 <br><br>
-<nav class="navbar navbar-expand-lg navbar-light bg-dark mb-4 fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-dark mb-4 fixed-top" style="color: white;">
   <div class="container">
     <a class="navbar-brand mt-4 mt-lg-0" href="#">
       <img

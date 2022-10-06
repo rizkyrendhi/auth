@@ -14,17 +14,22 @@
   <style>
      body {
        background-color: #1E2046;
+       left: 0%;
+       right: 0%;
+       
+     }
+     
      }
      </style>
   <body>
     <!-- menunya kita taruh persis di bawah <body> -->
     @include('layouts.menu')
     <!-- di bawah menu baru kontennya -->
-
-    <!-- Mulai sini kontennya depannya kasih @ sama yield-->
     @yield('content')
-    <!-- Sampai sini -->
-
+  
+    <!-- Mulai sini kontennya depannya kasih @ sama yield-->
+     
+    <br>
     @include('layouts.footer')
     <!-- Optional JavaScript; choose one of the two! -->
 
