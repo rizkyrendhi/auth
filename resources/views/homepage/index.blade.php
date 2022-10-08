@@ -5,33 +5,38 @@
 <!-- kategori produk -->
 <br><br>
   <!-- carousel -->
-  <div class="container">
-  <div class="row mt-5">
-    <div class="col">
-      <div id="carousel" class="carousel slide" data-ride="carousel" >
-        <div class="carousel-inner" style="height: 300px; ">
+  <center>
+<div class="container" >
+  <div class="row mt-5" >
+    <div class="col" >
+      <div id="carousel" class="carousel slide" data-ride="carousel"  >
+        <div class="carousel-inner" style="height: 300px;  ">
           <div class="carousel-item active">
-              <img src="{{ asset('images/carousel-3.jpg') }}" class="d-block w-150 h-250" alt="...">
+              <img src="{{ asset('images/carousel-3.jpg') }}" class="carosel" alt="..." style="max-width: 100%; height: auto;" >
           </div>
           <div class="carousel-item">
-            <img src="{{ asset('images/carousel-2.jpg') }}" class="d-block w-150 h-250" alt="...">
+            <img src="{{ asset('images/carousel-2.jpg') }}" class="d-block w-150 h-250" alt="..." style="max-width: 100%; height: auto;"  >
           </div>
-          <div class="carousel-item">
-            <img src="{{ asset('images/carousel-4.jpg') }}" class="d-block w-150 h-250" alt="...">
+          <div class="carousel-item" >
+            <img src="{{ asset('images/carousel-4.jpg') }}" class="d-block w-150 h-250" alt="..." style="max-width: 100%; height: auto;" >
           </div>
+          <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+
         </div>
-        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+    
+        
       </div>
     </div>
   </div>
 </div>
+</center>
   <!-- end carousel -->
   <br>
   <div class="container">
@@ -40,13 +45,14 @@
   <div class="row mt-4">
     <div class="col col-md-12 col-sm-12 mb-4">
       <div class="card bg-dark" style="border-color: white; color:white;">
-        <div class="card-body" style="width: 1500px;">
+        <div class="card-body" style="width: auto;">
           <a class="brand mt-4 mt-lg-0"  style="color: white; font-size: 20px; text-decoration: none;">
-            <strong> Platform </strong>&nbsp &nbsp &nbsp <a>|</a>
-          </a> &nbsp &nbsp
-          <a class="brand mt-4 mt-lg-0" href="{{ URL::to('kategori') }}">
+           <center> <strong> Platform </strong></center> 
+          </a><br>
+          <center>
+          <a class="brand mt-4 mt-lg-0" href="{{ URL::to('kategori') }}" >
             <img
-              src="{{ asset('images/gam-1.png') }}"
+              src="{{ asset('images/windows.png') }}"
               height="40"
               alt="MDB Logo"
               loading="lazy"
@@ -54,7 +60,7 @@
           </a>&nbsp &nbsp &nbsp &nbsp
           <a class="brand mt-4 mt-lg-0" href="{{ URL::to('kategori') }}">
             <img
-              src="{{ asset('images/gam-4.png') }}"
+              src="{{ asset('images/xbox.png') }}"
               height="40"
               alt="MDB Logo"
               loading="lazy"
@@ -62,7 +68,15 @@
           </a>&nbsp &nbsp &nbsp 
           <a class="brand mt-4 mt-lg-0" href="{{ URL::to('kategori') }}">
             <img
-              src="{{ asset('images/gam-3.png') }}"
+              src="{{ asset('images/ps2.png') }}"
+              height="40"
+              alt="MDB Logo"
+              loading="lazy"
+            />
+          </a>&nbsp &nbsp &nbsp  &nbsp 
+          <a class="brand mt-4 mt-lg-0" href="{{ URL::to('kategori') }}">
+            <img
+              src="{{ asset('images/ps3.png') }}"
               height="40"
               alt="MDB Logo"
               loading="lazy"
@@ -70,20 +84,13 @@
           </a>&nbsp &nbsp &nbsp &nbsp
           <a class="brand mt-4 mt-lg-0" href="{{ URL::to('kategori') }}">
             <img
-              src="{{ asset('images/gam-2.png') }}"
-              height="40"
-              alt="MDB Logo"
-              loading="lazy"
-            />
-          </a>&nbsp &nbsp &nbsp &nbsp
-          <a class="brand mt-4 mt-lg-0" href="{{ URL::to('kategori') }}">
-            <img
-              src="{{ asset('images/gam-5.png') }}"
+              src="{{ asset('images/ps4.png') }}"
               height="40"
               alt="MDB Logo"
               loading="lazy"
             />
           </a>
+          </center>
         </div>
     </div>
     </div>
@@ -99,11 +106,11 @@
     <!-- produk pertama -->
     <div class="col-md-3">
       <div class="card mb-4 shadow-sm bg-dark">
-        <a href="{{ URL::to('produk/satu') }}">
-          <img src="{{ \Storage::url($produk->foto) }}" alt="foto produk" class="card-img-top">
+        <a href="{{ URL::to('produkdetail/'.$produk->kode_produk) }}">
+          <img src="{{ \Storage::url($produk->foto) }}" alt="foto produk" class="card-img-top" style="height: 240px;">
         </a>
         <div class="card-body">
-          <a href="{{ URL::to('produk/satu') }}" class="text-decoration-none">
+          <a href="{{ URL::to('produkdetail/'.$produk->kode_produk) }}" class="text-decoration-none">
             <p class="card-text" style="color: white;">
             {{ $produk->nama_produk }}
             </p>

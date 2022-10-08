@@ -45,12 +45,18 @@ Route::get('/about', [\App\Http\Controllers\HomepageController::class,'about']);
 Route::get('/kontak', [\App\Http\Controllers\HomepageController::class,'kontak']);
 Route::get('/login', [\App\Http\Controllers\HomepageController::class,'login']);
 Route::get('/produk', [\App\Http\Controllers\HomepageController::class,'produk']);
-Route::get('/produk/{slug}', [\App\Http\Controllers\HomepageController::class,'produkdetail']);
+Route::get('/produk/{id}', [\App\Http\Controllers\HomepageController::class,'produkdetail']);
 Route::get('/kategori', [\App\Http\Controllers\HomepageController::class,'kategori']);
 Route::get('/kategori/{slug}', [\App\Http\Controllers\HomepageController::class,'kategoribyslug']);
 Route::resource('alamatpengiriman',App\Http\Controllers\AlamatPengirimanController::class);
 Route::get('checkout', [\App\Http\Controllers\CartController::class,'checkout']);
 Route::get('transaksi', [\App\Http\Controllers\TransaksiController::class,'transaksi']);
+Route::get('/produkdetail/{id}',  [\App\Http\Controllers\HomepageController::class,'produkdetail']);
+Route::resource('cart', App\Http\Controllers\CartController::class);
+Route::patch('kosongkan/{id}',[\App\Http\Controllers\CartController::class,'kosongkan']);
+Route::resource('cartdetail', App\Http\Controllers\CartDetailController::class);
+Route::get('checkout',[\App\Http\Controllers\CartController::class,'checkout']);
+
 
 Auth::routes();
 

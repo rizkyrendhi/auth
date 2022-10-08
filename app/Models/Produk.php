@@ -18,11 +18,11 @@ class Produk extends Model
     ];
 
     public function kategori() {
-        return $this->belongsTo('App\Kategori', 'kategori_id');
+        return $this->belongsTo('App\Models\Kategori', 'kategori_id');
     }
 
     public function user() {
-        return $this->belongsTo('App\User', 'user_id');
+        return $this->belongsTo('App\Models\User', 'user_id');
     }
 
     public function images() {

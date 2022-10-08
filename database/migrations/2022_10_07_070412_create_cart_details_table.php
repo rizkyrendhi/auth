@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateProdukImagesTable extends Migration
+class CreateCartDetailsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,15 @@ class CreateProdukImagesTable extends Migration
      */
     public function up()
     {
-        Schema::create('produk_images', function (Blueprint $table) {
+        Schema::create('cart_detail', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('produk_id')->unsigned();
-            $table->string('foto')->nullable();
+            $table->integer('cart_id')->unsigned();
+            $table->double('qty', 12, 2)->default(0);
+            $table->double('harga', 12, 2)->default(0);
+            $table->double('diskon', 12, 2)->default(0);
+            $table->double('subtotal', 12, 2)->default(0);
+            $table->foreign('cart_id')->references('id')->on('cart');
             $table->foreign('produk_id')->references('id')->on('produk');
             $table->timestamps();
         });
@@ -29,6 +34,6 @@ class CreateProdukImagesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('produk_images');
+        Schema::dropIfExists('cart_detail');
     }
 }

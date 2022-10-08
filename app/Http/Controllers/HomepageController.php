@@ -77,7 +77,7 @@ class HomepageController extends Controller
         return view('homepage.produk', $data)->with('no', ($request->input('page') - 1) * 18);
     }
     public function produkdetail($id) {
-        $itemproduk = Produk::where('slug_produk', $id)
+        $itemproduk = Produk::where('kode_produk', $id)
                             ->where('status', 'publish')
                             ->first();
         if ($itemproduk) {
@@ -99,4 +99,5 @@ class HomepageController extends Controller
             return abort('404');
         }
     }
+    
 }

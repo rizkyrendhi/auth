@@ -23,6 +23,12 @@
             <p>Produk</p>
           </a>
         </li>
+        <li class="nav-item">
+          <a href="{{ URL::to('admin/wishlist') }}" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Wishlist</p>
+          </a>
+        </li>
       </ul>
     </li>
     <li class="nav-item has-treeview">
@@ -34,6 +40,12 @@
         </p>
       </a>
       <ul class="nav nav-treeview">
+      <li class="nav-item">
+          <a href="{{ URL::to('admin/transaksi') }}" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Data Transaksi</p>
+          </a>
+        </li>
         <li class="nav-item">
           <a href="#" class="nav-link">
             <i class="far fa-circle nav-icon"></i>
