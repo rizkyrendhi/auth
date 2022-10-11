@@ -1,7 +1,7 @@
 <br><br>
 <nav class="navbar navbar-expand-lg navbar-light bg-dark mb-4 fixed-top" style="color: white;">
   <div class="container">
-    <a class="navbar-brand mt-4 mt-lg-0" href="#">
+    <a class="navbar-brand mt-4 mt-lg-0" href="/">
       <img
         src="{{ asset('images/logo-2.png') }}"
         height="40"
@@ -16,7 +16,7 @@
       <ul class="mr-auto navbar-nav"></ul>
       <ul class="navbar-nav">
         <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="{{ URL::to('cart') }}">
           <i style="color:white; font-size:25px; margin-top:5px;" class="fa-solid fa-cart-shopping"></i>
         </a>
         </li>

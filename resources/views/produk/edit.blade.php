@@ -48,6 +48,10 @@
               <label for="nama_produk">Nama Produk</label>
               <input type="text" name="nama_produk" id="nama_produk" value={{ $itemproduk->nama_produk }} class="form-control">
             </div>
+            <div class="form-group">
+              <label for="nama_produk">Deskripsi</label>
+              <input type="text" name="slug_produk" id="slug_produk" value="-"class="form-control"readonly/>
+            </div>
             <div class="row">
               <div class="col">
               </div>

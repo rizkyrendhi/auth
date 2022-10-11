@@ -1,5 +1,6 @@
 @extends('layouts.template')
 @section('content')
+<br><br>
 <div class="container">
   <div class="row mt-4">
     <div class="col col-lg-8 col-md-8">
@@ -7,24 +8,14 @@
         <div class="carousel-inner">
         @foreach($itemproduk->images as $index => $image)
         @if($index == 0)
-          <div class="carousel-item active">
-              <img src="{{ \Storage::url($image->foto) }}" class="d-block w-100" alt="...">
-          </div>
+          <div class="center">
+              <img src="{{ \Storage::url($image->foto) }}" class="d-block w-70"  alt="...">
+          </div> s
         @else
-          <div class="carousel-item">
-              <img src="{{ \Storage::url($image->foto) }}" class="d-block w-100" alt="..." style="height: 500px;">
-          </div>
         @endif
         @endforeach
         </div>
-        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+        
       </div>
     </div>
     <!-- deskripsi produk -->
@@ -73,9 +64,7 @@
               <i class="fa fa-shopping-cart"></i> Tambahkan Ke Keranjang
               </button>
             </form>
-              <button class="btn btn-block btn-danger mt-4">
-              <i class="fa fa-shopping-basket"></i> Beli Sekarang
-              </button>
+              
             </div>
             <div class="card-footer">
               <div class="row mt-4">
@@ -98,17 +87,5 @@
       </div>
     </div>
   </div>
-  <div class="row mt-4">
-    <div class="col">
-      <div class="card">
-        <div class="card-header">
-          Deskripsi
-        </div>
-        <div class="card-body">
-          {{ $itemproduk->deskripsi_produk }}
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+  
 @endsection

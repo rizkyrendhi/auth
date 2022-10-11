@@ -1,5 +1,6 @@
 @extends('layouts.template')
 @section('content')
+<br><br><br>
 <div class="container">
   <div class="row">
     <div class="col col-md-8">
@@ -132,13 +133,15 @@
             <a href="{{ URL::to('checkout') }}" class="btn btn-primary btn-block">
                 Checkout
             </a>
-            <div class="col">
+            
               <form action="{{ url('kosongkan').'/'.$itemcart->id }}" method="post">
                 @method('patch')
                 @csrf()
-                <button type="submit" class="btn btn-danger btn-block">Kosongkan</button>
+                <br>
+          
+                <button type="submit" class="btn btn-danger btn-block">Hapus</button>
               </form>
-            </div>
+           
           </div>
         </div>
       </div>

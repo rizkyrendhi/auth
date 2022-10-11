@@ -100,25 +100,22 @@ class ProdukController extends Controller
         $this->validate($request, [
             'kode_produk' => 'required|unique:produk,id,'.$id,
             'nama_produk' => 'required',
-            'slug_produk' => 'required',
-            'deskripsi_produk' => 'required',
+             'kategori_id' => 'required',
             'kategori_id' => 'required',
-            'qty' => 'required|numeric',
-            'satuan' => 'required',
             'harga' => 'required|numeric'
         ]);
         $itemproduk = Produk::findOrFail($id);
         // kalo ga ada error page not found 404
-        $slug = \Str::slug($request->slug_produk);//slug kita gunakan nanti pas buka produk
+        $slug = \Str::slug($request->nama_produk);//slug kita gunakan nanti pas buka produk
         // kita validasi dulu, biar tidak ada slug yang sama
         $validasislug = Produk::where('id', '!=', $id)//yang id-nya tidak sama dengan $id
-                                ->where('slug_produk', $slug)
+                                ->where('nama_produk', $slug)
                                 ->first();
         if ($validasislug) {
             return back()->with('error', 'Slug sudah ada, coba yang lain');
         } else {
             $inputan = $request->all();
-            $inputan['slug'] = $slug;
+            $inputan['name'] = $slug;
             $itemproduk->update($inputan);
             return redirect()->route('produk.index')->with('success', 'Data berhasil diupdate');
         }
