@@ -14,17 +14,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::group(['prefix' => 'user'], function() {
+Route::group(['prefix' => 'user', 'middleware' => 'auth'], function() {
   
     Route::resource('transaksi',\App\Http\Controllers\TransaksiController::class);
-    Route::get('profil',[\App\Http\Controllers\UserController::class,'index']);
+    Route::get('/',[\App\Http\Controllers\UserController::class,'index']);
     Route::get('/setting', [\App\Http\Controllers\UserController::class,'setting']);
-   
-    
     Route::resource('wishlist',App\Http\Controllers\WishlistController::class);
 });
 
-Route::group(['prefix' => 'admin'], function() {
+Route::group(['prefix' => 'admin', 'middleware' => ['auth','level:admin']], function() {
     Route::get('/', [\App\Http\Controllers\DashboardController::class,'index']);
     Route::resource('kategori',\App\Http\Controllers\KategoriController::class);
     Route::resource('produk',\App\Http\Controllers\ProdukController::class);
@@ -44,7 +42,7 @@ Route::group(['prefix' => 'admin'], function() {
     Route::resource('customer',\App\Http\Controllers\CustomerController::class);
     
 });
-Route::get('/home', [\App\Http\Controllers\HomepageController::class,'index'])->name('home');
+//Route::get('/home', [\App\Http\Controllers\HomepageController::class,'index'])->name('home');
 Route::get('/', [\App\Http\Controllers\HomepageController::class,'index']);
 Route::get('/about', [\App\Http\Controllers\HomepageController::class,'about']);
 Route::get('/kontak', [\App\Http\Controllers\HomepageController::class,'kontak']);
@@ -65,7 +63,11 @@ Route::get('checkout',[\App\Http\Controllers\CartController::class,'checkout']);
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index']);
 Route::resource('cart', App\Http\Controllers\CartController::class);
 Route::patch('kosongkan/{id}',[\App\Http\Controllers\CartController::class,'kosongkan']);
 Route::resource('cartdetail', App\Http\Controllers\CartDetailController::class);
+
+Route::get('/home', function() {
+    return redirect('/admin');
+});
