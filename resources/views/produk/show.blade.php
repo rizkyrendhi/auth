@@ -28,6 +28,12 @@
                 </td>
               </tr>
               <tr>
+                <td>Kategori Produk</td>
+                <td>
+                {{ $itemproduk->kategori }}
+                </td>
+              </tr>
+              <tr>
                 <td>Harga</td>
                 <td>
                   Rp. {{ number_format($itemproduk->harga, 2) }}

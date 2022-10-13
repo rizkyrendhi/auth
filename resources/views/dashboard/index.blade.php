@@ -5,9 +5,9 @@
     <div class="col-6 col-lg-3">
       <div class="small-box bg-primary">
         <div class="inner">
-          <h3>150</h3>
+          <h5>Kategori</h5>
 
-          <p>Order Baru</p>
+          <p></p>
         </div>
         <div class="icon">
           <i class="ion ion-bag"></i>
@@ -18,9 +18,9 @@
     <div class="col-6 col-lg-3">
       <div class="small-box bg-info">
         <div class="inner">
-          <h3>150</h3>
+          <h5>Produk</h5>
 
-          <p>Produk</p>
+          <p></p>
         </div>
         <div class="icon">
           <i class="ion ion-pie-graph"></i>
@@ -31,9 +31,9 @@
     <div class="col-6 col-lg-3">
       <div class="small-box bg-warning">
         <div class="inner">
-          <h3>150</h3>
+          <h5>Wishlist</h5>
 
-          <p>Member</p>
+          <p></p>
         </div>
         <div class="icon">
           <i class="ion ion-person-add"></i>
@@ -45,9 +45,9 @@
     <div class="col-6 col-lg-3">
       <div class="small-box bg-success">
         <div class="inner">
-          <h3>150</h3>
+          <h5>Data Transaksi</h5>
 
-          <p>Transaksi</p>
+          <p></p>
         </div>
         <div class="icon">
           <i class="ion ion-stats-bars"></i>
@@ -68,45 +68,7 @@
             </a>
           </div>
         </div>
-        <div class="card-body">
-          <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th>No</th>
-                <th>Kode</th>
-                <th>Nama</th>
-                <th>Kategori</th>
-                <th>Qty</th>
-                <th>Harga</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>PRO-1</td>
-                <td>Baju Atasan</td>
-                <td>Baju Anak</td>
-                <td>12 kodi</td>
-                <td>5.000</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>PRO-2</td>
-                <td>Gamis</td>
-                <td>Baju Wanita</td>
-                <td>20 kodi</td>
-                <td>25.000</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>PRO-3</td>
-                <td>Daster</td>
-                <td>Baju Wanita</td>
-                <td>20 kodi</td>
-                <td>125.000</td>
-              </tr>
-            </tbody>
-          </table>
+
         </div>
       </div>
     </div>

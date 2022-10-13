@@ -18,7 +18,7 @@
             <img src="{{ asset('images/carousel-2.jpg') }}" class="d-block w-150 h-250" alt="..." style="max-width: 100%; height: auto;"  >
           </div>
           <div class="carousel-item" >
-            <img src="{{ asset('images/carousel-4.jpg') }}" class="d-block w-150 h-250" alt="..." style="max-width: 100%; height: auto;" >
+            <img src="{{ asset('images/carousel-5.jpg') }}" class="d-block w-150 h-250" alt="..." style="max-width: 100%; height: auto;" >
           </div>
           <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -50,7 +50,7 @@
            <center> <strong> Platform </strong></center> 
           </a><br>
           <center>
-          <a class="brand mt-4 mt-lg-0" href="{{ URL::to('kategori') }}" >
+          <a class="brand mt-4 mt-lg-0" href="{{ URL::to('kategori/Windows') }}" >
             <img
               src="{{ asset('images/windows.png') }}"
               height="40"
@@ -58,7 +58,7 @@
               loading="lazy"
             />
           </a>&nbsp &nbsp &nbsp &nbsp
-          <a class="brand mt-4 mt-lg-0" href="{{ URL::to('kategori') }}">
+          <a class="brand mt-4 mt-lg-0" href="{{ URL::to('kategori/xbox') }}">
             <img
               src="{{ asset('images/xbox.png') }}"
               height="40"
@@ -66,7 +66,7 @@
               loading="lazy"
             />
           </a>&nbsp &nbsp &nbsp 
-          <a class="brand mt-4 mt-lg-0" href="{{ URL::to('kategori') }}">
+          <a class="brand mt-4 mt-lg-0" href="{{ URL::to('kategori/ps-2') }}">
             <img
               src="{{ asset('images/ps2.png') }}"
               height="40"
@@ -74,7 +74,7 @@
               loading="lazy"
             />
           </a>&nbsp &nbsp &nbsp  &nbsp 
-          <a class="brand mt-4 mt-lg-0" href="{{ URL::to('kategori') }}">
+          <a class="brand mt-4 mt-lg-0" href="{{ URL::to('kategori/ps-3') }}">
             <img
               src="{{ asset('images/ps3.png') }}"
               height="40"
@@ -82,7 +82,7 @@
               loading="lazy"
             />
           </a>&nbsp &nbsp &nbsp &nbsp
-          <a class="brand mt-4 mt-lg-0" href="{{ URL::to('kategori') }}">
+          <a class="brand mt-4 mt-lg-0" href="{{ URL::to('kategori/ps-4') }}">
             <img
               src="{{ asset('images/ps4.png') }}"
               height="40"
@@ -107,7 +107,7 @@
     <div class="col-md-3">
       <div class="card mb-4 shadow-sm bg-dark">
         <a href="{{ URL::to('produkdetail/'.$produk->kode_produk) }}">
-          <img src="{{ \Storage::url($produk->foto) }}" alt="foto produk" class="card-img-top" style="height: 240px;">
+          <img src="{{ \Storage::url($produk->foto) }}" alt="foto produk" class="card-img-top" style="height: 240px; ">
         </a>
         <div class="card-body">
           <a href="{{ URL::to('produkdetail/'.$produk->kode_produk) }}" class="text-decoration-none">
@@ -131,6 +131,7 @@
         </div>
       </div>
     </div>
+  
 @endforeach
   <!-- produk Terbaru-->
   <!--<div class="row mt-4">

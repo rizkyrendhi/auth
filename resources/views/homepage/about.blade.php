@@ -11,10 +11,11 @@
     </div>
     <div class="col-md-8"> 
       <div class="card-body" style="height: auto;">
-        <h2 class="card-title" style="text-align: center;">About Us</h2>
-        <p class="card-text" style="max-height: 400px;"><p>Lorem ipsum dolor sit amet. Et explicabo tempore eos neque dolor id corporis deleniti hic recusandae velit. Sed dolorem numquam qui dolor voluptatem ea repellat dolorem ut quam eveniet et facilis corporis et iusto ipsa. In illo illum quo aliquid maiores ea fugit inventore qui quidem minima ex blanditiis asperiores non officiis itaque. Aut eveniet sint non laborum suscipit et accusamus officia quo voluptatibus ratione. </p><p>Ut atque quia in galisum similique sit voluptas incidunt qui galisum laudantium et unde adipisci ut perspiciatis earum non temporibus maiores. Vel molestiae explicabo non voluptatem laboriosam qui quam alias ut nihil autem id deserunt totam et enim dolore. </p><p>Et consequatur omnis At quisquam tenetur et doloribus error non consequatur exercitationem At quod perspiciatis sed quos atque. Sed exercitationem debitis in voluptatem asperiores non voluptas aperiam hic eligendi praesentium sit cupiditate excepturi. </p>
+        <h2 class="card-title" style="text-align: center;">Tentang Kami</h2>
+        <p class="card-text" style="max-height: 400px; "><p>GamesToon merupakan website E-Commerce yang bergerak di bidang pemasaran game di berbagai platfrom, kami menyediakan berbagai game legal yang terbaru dan populer belakangan ini. Kami telah bekerjasama dengan berbagai platform game termasuk Windows, PS 2, PS 3, PS 4, dan XBOX.
+ </p>
       </p>
-        <p class="card-text"><small class="text-muted">creator</small></p>
+        <p class="card-text"><small class="text-muted">GamesToon</small></p>
       </div>
     </div>
   </div>

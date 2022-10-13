@@ -70,6 +70,16 @@
               </select>
             </div>
             <div class="form-group">
+              <label for="status">Kategori</label>
+              <select name="kategori" id="kategori" class="form-control">
+                <option value="Windows">Windows</option>
+                <option value="XBOX">XBOX</option>
+                <option value="PS 2">PS 2</option>
+                <option value="PS 3">PS 3</option>
+                <option value="PS 4">PS 4</option>
+              </select>
+            </div>
+            <div class="form-group">
               <button type="submit" class="btn btn-primary">Update</button>
               <button type="reset" class="btn btn-warning">Reset</button>
             </div>

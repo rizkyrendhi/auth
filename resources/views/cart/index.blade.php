@@ -31,7 +31,7 @@
                 <th>Produk</th>
                 <th>Harga</th>
                 <th>Diskon</th>
-                <th>Qty</th>
+                <th>Jumlah</th>
                 <th>Subtotal</th>
                 <th></th>
               </tr>
@@ -45,8 +45,6 @@
                 <td>
                 {{ $detail->produk->nama_produk }}
                 <br />
-                {{ $detail->produk->kode_produk }}
-                </td>
                 <td>
                 {{ number_format($detail->harga, 2) }}
                 </td>

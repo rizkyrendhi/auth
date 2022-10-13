@@ -41,22 +41,7 @@
                   <td class="text-right">2</td>
                   <td class="text-right">30.000</td>
                 </tr>
-                <tr>
-                  <td>2</td>
-                  <td>KATE-2</td>
-                  <td>Baju Anak</td>
-                  <td class="text-right">25.000</td>
-                  <td class="text-right">2</td>
-                  <td class="text-right">50.000</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>KATE-3</td>
-                  <td>Baju Anak</td>
-                  <td class="text-right">35.000</td>
-                  <td class="text-right">2</td>
-                  <td class="text-right">70.000</td>
-                </tr>
+            
                 <tr>
                   <td colspan="5">
                     <b>Total</b>

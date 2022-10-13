@@ -24,7 +24,7 @@
         <div class="col">
           <div class="card">
             <div class="card-body">
-              <span class="small">{{ $itemproduk->kategori->nama_kategori }}</span>
+              <span class="small">{{ $itemproduk->kategori}}</span>
               <h5>{{ $itemproduk->nama_produk }}</h5>
               <!-- cek apakah ada promo -->
               @if($itemproduk->promo != null)

@@ -31,7 +31,7 @@
           <form action="{{ route('produk.store') }}" method="post">
             @csrf
             <div class="form-group">
-              <label for="kategori_id">Kategori Produk</label>
+              <label for="kategori_id">Platform</label>
               <select name="kategori_id" id="kategori_id" class="form-control">
                 <option value="">Pilih Kategori</option>
                 @foreach($itemkategori as $kategori)
@@ -50,6 +50,16 @@
             <div class="form-group">
               <label for="harga">Harga</label>
               <input type="text" name="harga" id="harga" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="status">Kategori</label>
+              <select name="kategori" id="kategori" class="form-control">
+                <option value="Windows">Windows</option>
+                <option value="XBOX">XBOX</option>
+                <option value="PS 2">PS 2</option>
+                <option value="PS 3">PS 3</option>
+                <option value="PS 4">PS 4</option>
+              </select>
             </div>
             <div class="form-group">
               <button type="submit" class="btn btn-primary">Simpan</button>

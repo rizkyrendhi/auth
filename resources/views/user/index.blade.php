@@ -8,8 +8,8 @@
           <div class="text-center">
             <img src="{{ asset('img/user1-128x128.jpg') }}" alt="profil" class="profile-user-img img-responsive img-circle">
           </div>
-          <h3 class="profile-username text-center">Fadlur Rohman</h3>
-          <p class="text-muted text-center">Member sejak : 20 Des 2020</p>
+          <h3 class="profile-username text-center">{{ Auth::user()->name }}</h3>
+    
           <hr>
           <strong>
             <i class="fas fa-map-marker mr-2"></i>
@@ -35,7 +35,7 @@
             Jekulo, Kab Kudus
           </p>
           <hr>
-          <a href="{{ URL::to('admin/setting') }}" class="btn btn-primary btn-block">Setting</a>
+          <a href="{{ URL::to('user/setting') }}" class="btn btn-primary btn-block">Setting</a>
         </div>
       </div>      
     </div>
@@ -45,6 +45,7 @@
           <h3 class="card-title">History Transaksi</h3>
         </div>
         <div class="card-body">
+       
           <div class="table-responsive">
             <table class="table">
               <thead>
@@ -61,30 +62,31 @@
                 </tr>
               </thead>
               <tbody>
+             
                 <tr>
                   <td>
-                    1
+                  
                   </td>
                   <td>
-                    Inv-01
+                    
                   </td>
                   <td>
-                    200.000
+                   
                   </td>
                   <td>
-                    0                  
+                                  
                   </td>
                   <td>
-                    27.000
+                    
                   </td>
                   <td>
-                    227.000
+                    
                   </td>
                   <td>
-                    Belum dibayar
+                    
                   </td>
                   <td>
-                    Checkout
+                    
                   </td>
                   <td>
                     <a href="{{ route('transaksi.show', 1) }}" class="btn btn-sm btn-info mb-2">
@@ -92,130 +94,7 @@
                     </a>
                   </td>
                 </tr>
-                <tr>
-                  <td>
-                    2
-                  </td>
-                  <td>
-                    Inv-02
-                  </td>
-                  <td>
-                    200.000
-                  </td>
-                  <td>
-                    0                  
-                  </td>
-                  <td>
-                    27.000
-                  </td>
-                  <td>
-                    227.000
-                  </td>
-                  <td>
-                    Belum dibayar
-                  </td>
-                  <td>
-                    Checkout
-                  </td>
-                  <td>
-                    <a href="{{ route('transaksi.show', 2) }}" class="btn btn-sm btn-info mb-2">
-                      Detail
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    3
-                  </td>
-                  <td>
-                    Inv-03
-                  </td>
-                  <td>
-                    200.000
-                  </td>
-                  <td>
-                    0                  
-                  </td>
-                  <td>
-                    27.000
-                  </td>
-                  <td>
-                    227.000
-                  </td>
-                  <td>
-                    Belum dibayar
-                  </td>
-                  <td>
-                    Checkout
-                  </td>
-                  <td>
-                    <a href="{{ route('transaksi.show', 3) }}" class="btn btn-sm btn-info mb-2">
-                      Detail
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    4
-                  </td>
-                  <td>
-                    Inv-04
-                  </td>
-                  <td>
-                    200.000
-                  </td>
-                  <td>
-                    0                  
-                  </td>
-                  <td>
-                    27.000
-                  </td>
-                  <td>
-                    227.000
-                  </td>
-                  <td>
-                    Belum dibayar
-                  </td>
-                  <td>
-                    Checkout
-                  </td>
-                  <td>
-                    <a href="{{ route('transaksi.show', 4) }}" class="btn btn-sm btn-info mb-2">
-                      Detail
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    5
-                  </td>
-                  <td>
-                    Inv-05
-                  </td>
-                  <td>
-                    200.000
-                  </td>
-                  <td>
-                    0                  
-                  </td>
-                  <td>
-                    27.000
-                  </td>
-                  <td>
-                    227.000
-                  </td>
-                  <td>
-                    Belum dibayar
-                  </td>
-                  <td>
-                    Checkout
-                  </td>
-                  <td>
-                    <a href="{{ route('transaksi.show', 5) }}" class="btn btn-sm btn-info mb-2">
-                      Detail
-                    </a>
-                  </td>
-                </tr>
+              
               </tbody>
             </table>
           </div>

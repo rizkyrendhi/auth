@@ -48,6 +48,7 @@
                   <th>Nama</th>
                   <th>Harga</th>
                   <th>Status</th>
+                  <th>Kategori</th>
                   <th></th>
                 </tr>
               </thead>
@@ -76,6 +77,9 @@
                   </td>
                   <td>
                   {{ $produk->status }}
+                  </td>
+                  <td>
+                  {{ $produk->kategori }}
                   </td>
                   <td>
                     <a href="{{ route('produk.show', $produk->id) }}" class="btn btn-sm btn-primary mr-2 mb-2">

@@ -5,9 +5,9 @@
    <!-- menu footer -->
     <section class="mb-4">
       
-      <a class="btn btn-outline-light btn-floating m-1" href="{{ URL::to('about') }}">About Us</a>
-      <a class="btn btn-outline-light btn-floating m-1" href="{{ URL::to('kategori') }}">Kategori</a>
-      <a class="btn btn-outline-light btn-floating m-1" href="{{ URL::to('produk') }}">Produk</a>
+      <a class="btn btn-outline-light btn-floating m-1" href="{{ URL::to('about') }}">Tentang</a>
+      <a class="btn btn-outline-light btn-floating m-1" href="{{ URL::to('produk') }}">Kategori</a>
+      <a class="btn btn-outline-light btn-floating m-1" href="{{ URL::to('/') }}">Produk</a>
       <a class="btn btn-outline-light btn-floating m-1" href="{{ URL::to('kontak') }}">Kontak</a>
     <!-- end menu footer -->
     </section>
@@ -22,7 +22,7 @@
   
   <!-- Copyright -->
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2022 Copyright
+    © Gamestoon
   </div>
   <!-- Copyright -->
 </footer>
