@@ -1,37 +1,38 @@
 @extends('layouts.dashboard')
 @section('content')
+
 <div class="container-fluid">
   <div class="row">
     <div class="col col-lg-4 col-md-4">
-      <div class="card card-primary card-outline">
+      <div class="card card-primary card-outline bg-dark">
         <div class="card-body box-profile">
           <div class="text-center">
             <img src="{{ asset('img/user1-128x128.jpg') }}" alt="profil" class="profile-user-img img-responsive img-circle">
           </div>
-          <h3 class="profile-username text-center">{{ Auth::user()->name }}</h3>
+          <h3 class="profile-username text-center" style="color: white;">{{ Auth::user()->name }}</h3>
     
           <hr>
-          <strong>
+          <strong style="color: white;">
             <i class="fas fa-map-marker mr-2"></i>
             Alamat
           </strong>
-          <p class="text-muted">
+          <p class="text-muted" style="color: white;">
             Jekulo, Kab Kudus
           </p>
           <hr>
-          <strong>
+          <strong style="color: white;">
             <i class="fas fa-envelope mr-2"></i>
             Email
           </strong>
-          <p class="text-muted">
+          <p class="text-muted" style="color: white;">
             f4dlur@gmail.com
           </p>
           <hr>
-          <strong>
+          <strong style="color: white;">
             <i class="fas fa-phone mr-2"></i>
             No Tlp
           </strong>
-          <p class="text-muted">
+          <p class="text-muted" style="color: white;">
             Jekulo, Kab Kudus
           </p>
           <hr>
@@ -40,16 +41,16 @@
       </div>      
     </div>
     <div class="col col-lg-8 col-md-8">
-      <div class="card card-primary card-outline">
+      <div class="card card-primary card-outline bg-dark">
         <div class="card-header">
-          <h3 class="card-title">History Transaksi</h3>
+          <h3 class="card-title" style="color: white;">History Transaksi</h3>
         </div>
         <div class="card-body">
        
           <div class="table-responsive">
             <table class="table">
               <thead>
-                <tr>
+                <tr style="color: white;">
                   <th>No</th>
                   <th>Invoice</th>
                   <th>Sub Total</th>
