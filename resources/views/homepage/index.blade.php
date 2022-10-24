@@ -42,7 +42,7 @@
   <div class="row mt-4">
     <div class="col col-md-12 col-sm-12 mb-4">
       <h2 class="text-center" style="color: white; ">Platform</h2>
-      <a class="btn btn-outline-light btn-floating m-1" href="{{ URL::to('kategori/windows') }}">
+      <a class="btn btn-outline-light btn-floating m-1" href="{{ URL::to('kategori') }}">
         <img
           src="{{ asset('images/windows.png') }}"
           height="40"
@@ -50,7 +50,7 @@
           loading="lazy"
         />
       </a>
-      <a class="btn btn-outline-light btn-floating m-1" href="{{ URL::to('kategori/xbox') }}">
+      <a class="btn btn-outline-light btn-floating m-1" href="{{ URL::to('kategori') }}">
         <img
           src="{{ asset('images/xbox.png') }}"
           height="40"
@@ -58,7 +58,7 @@
           loading="lazy"
         />
       </a>
-      <a class="btn btn-outline-light btn-floating m-1" href="{{ URL::to('kategori/ps-2') }}">
+      <a class="btn btn-outline-light btn-floating m-1" href="{{ URL::to('kategori') }}">
         <img
           src="{{ asset('images/ps2.png') }}"
           height="40"
@@ -66,7 +66,7 @@
           loading="lazy"
         />
       </a>
-      <a class="btn btn-outline-light btn-floating m-1" href="{{ URL::to('kategori/ps-3') }}">
+      <a class="btn btn-outline-light btn-floating m-1" href="{{ URL::to('kategori') }}">
         <img
           src="{{ asset('images/ps3.png') }}"
           height="40"
