@@ -49,9 +49,6 @@
                        
                                 <input id="password-confirm" placeholder="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                             </div>
-                        
-
-                       
                                 <input type="submit" value="Register" style="background: blue;">
                                   
                             

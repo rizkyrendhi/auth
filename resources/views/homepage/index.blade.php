@@ -35,6 +35,9 @@
   </center>
   <!-- end carousel -->
   <br>
+  @foreach($itemproduk as $produk)
+    @if ($produk->foto !=null)
+  <!-- produk Terbaru-->
   <center>
   <div class="row mt-4">
     <div class="col col-md-12 col-sm-12 mb-4">
@@ -82,17 +85,16 @@
     </div>
   </div>
   </center>
-  
-  <!-- produk Terbaru-->
+ 
   <div class="row mt-4" >
     <div class="col col-md-12 col-sm-12 mb-4">
       <h2 class="text-center" style="color: white; ">Rekomendasi</h2>
      
     </div>
     
-    @foreach($itemproduk as $produk)
-    @if ($produk->foto !=null)
+   
     <!-- produk pertama -->
+    <div class="container">
     <div class="col-md-3">
       <div class="card mb-4 shadow-sm bg-dark">
         <a href="{{ URL::to('produkdetail/'.$produk->kode_produk) }}">
@@ -115,11 +117,12 @@
               {{ number_format($produk->harga, 2) }}
               </p>
             </div>
-            @endif
+           
           </div>
         </div>
       </div>
+      </div>
     </div>
-  
+    @endif
 @endforeach
   
