@@ -89,7 +89,7 @@
       <h2 class="text-center" style="color: white; ">Rekomendasi</h2>
      
     </div>
-    
+    <div class="container">
     @foreach($itemproduk as $produk)
     @if ($produk->foto !=null)
     <!-- produk pertama -->
@@ -120,6 +120,7 @@
         </div>
       </div>
     </div>
-  
+    </div>
+  </div>
 @endforeach
   

@@ -23,7 +23,7 @@
      </style>
   <body>
     <!-- menunya kita taruh persis di bawah <body> -->
-    @include('layouts.menu')
+    @include('layouts.newmenu')
     <!-- di bawah menu baru kontennya -->
     @yield('content')
   
