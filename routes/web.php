@@ -14,13 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::group(['prefix' => 'user', 'middleware' => 'auth'], function() {
-  
-    Route::resource('transaksi',\App\Http\Controllers\TransaksiController::class);
-    Route::get('/',[\App\Http\Controllers\UserController::class,'index']);
-    Route::get('/setting', [\App\Http\Controllers\UserController::class,'setting']);
-    Route::resource('wishlist',App\Http\Controllers\WishlistController::class);
-});
+ 
 
 Route::group(['prefix' => 'admin', 'middleware' => ['auth','level:admin']], function() {
     Route::get('/', [\App\Http\Controllers\DashboardController::class,'index']);
@@ -40,8 +34,13 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth','level:admin']], func
     Route::get('laporan',[\App\Http\Controllers\LaporanController::class,'index']);
     Route::get('proseslaporan',[\App\Http\Controllers\LaporanController::class,'proses']);
     Route::resource('customer',\App\Http\Controllers\CustomerController::class);
-    
+    Route::resource('transaksi',\App\Http\Controllers\TransaksiController::class);
+    Route::get('/',[\App\Http\Controllers\UserController::class,'index']);
+    Route::get('/setting', [\App\Http\Controllers\UserController::class,'setting']);
+    Route::resource('wishlist',App\Http\Controllers\WishlistController::class);
 });
+    
+
 //Route::get('/home', [\App\Http\Controllers\HomepageController::class,'index'])->name('home');
 Route::get('/', [\App\Http\Controllers\HomepageController::class,'index']);
 Route::get('/about', [\App\Http\Controllers\HomepageController::class,'about']);
